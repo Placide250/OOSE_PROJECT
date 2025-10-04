@@ -31,10 +31,13 @@ class ShoppingCart {
   }
 }
 
+<<<<<<< HEAD
 // Example usage - commented out since we're just demonstrating
 // const shoppingCart = new ShoppingCart();
 // console.log(productName, price);
 
+=======
+>>>>>>> cc8a8c0 (test with github actions)
 interface Product {
   name: string;
   price: number;
@@ -48,5 +51,8 @@ function displayProduct(product: Product): string {
   return `$${product.price}`;
 }
 
+<<<<<<< HEAD
 // Export for potential use in other modules
+=======
+>>>>>>> cc8a8c0 (test with github actions)
 export { ShoppingCart, Product, displayProduct, calculateTotal };
