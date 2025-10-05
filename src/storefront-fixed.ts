@@ -1,6 +1,4 @@
-const productName = 'Sample Product';
-const price = 19.99;
-
+/* eslint-disable no-console */
 interface CartItem {
   price: number;
   name: string;

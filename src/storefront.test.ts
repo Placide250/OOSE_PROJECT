@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { ShoppingCart, Product, displayProduct, calculateTotal } from './storefront-fixed';
 
 const mockConsoleLog = jest.fn();
@@ -63,13 +64,12 @@ describe('ShoppingCart Tests', () => {
   });
 
   test('should handle null prices in cart items', () => {
-    const items = [
+    const items: Array<{ name: string; price: number | null }> = [
       { name: 'Valid Item', price: 50 },
       { name: 'Invalid Item', price: null },
       { name: 'Another Valid', price: 30 }
     ];
-    const total = calculateTotal(items as any);
+    const total = calculateTotal(items as Array<{ name: string; price: number }>);
     expect(total).toBe(80);
   });
 });
-
