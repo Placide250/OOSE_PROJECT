@@ -72,3 +72,4 @@ describe('ShoppingCart Tests', () => {
     expect(total).toBe(80);
   });
 });
+
